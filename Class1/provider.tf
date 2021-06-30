@@ -3,5 +3,5 @@ provider "aws"{
 }
 
 resource "aws_iam_user" "tim" {
-    name = "tim"
+    name = "tim" 
 }
