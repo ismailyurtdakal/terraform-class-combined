@@ -4,6 +4,6 @@ resource "aws_iam_group" "developers" {
 }
 
 
-resource "aws_iam_group" "sales" {
-  name = "sales"
+resource "aws_iam_group" "sales_gr" {
+  name = "sales_group"
 }
