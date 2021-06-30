@@ -5,5 +5,5 @@ resource "aws_iam_group" "developers" {
 
 
 resource "aws_iam_group" "sales" {
-  # (resource arguments)
+  name = "sales"
 }
