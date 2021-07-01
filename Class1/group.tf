@@ -6,6 +6,7 @@ resource "aws_iam_group" "developers" {
     "tim",
     "sam",
     "ben",
+    "lisa"
   ])
 }
 
