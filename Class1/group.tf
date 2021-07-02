@@ -1,5 +1,5 @@
-resource "aws_iam_group" "developers" {
-  name = "developers_group"
+resource "aws_iam_group" "Team_Developers" {
+  name = "developers"
   path = "/users/"
   for_each = toset([
     "bob",
