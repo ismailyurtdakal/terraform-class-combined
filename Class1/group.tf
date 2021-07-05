@@ -1,13 +1,8 @@
-resource "aws_iam_group" "Team_Developers" {
-  name = "developers"
+resource "aws_iam_group" "developers" {
+  name = each.key  
   path = "/users/"
   for_each = toset([
-    "bob",
-    "tim",
-    "sam",
-    "ben",
-    "lisa"
+    "sales",
+    "marketing",
+    "billing",
   ])
-}
-
-
