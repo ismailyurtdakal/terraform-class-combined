@@ -1,4 +1,4 @@
-resource "aws_iam_user" "users" {
+resource "aws_iam_user" "user" {
   name = each.key
   path = "/system/"
   for_each = toset([
