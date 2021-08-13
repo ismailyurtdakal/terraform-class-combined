@@ -1,0 +1,5 @@
+export STREET="South"
+export ADDRESS="123"
+export CITY="Rosemont"
+export STATE="IL"
+export ZIP="60018"
