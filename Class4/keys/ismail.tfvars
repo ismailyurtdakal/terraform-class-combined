@@ -1,4 +1,4 @@
-region     = "us-west-2"
+
 key_name       = "ismail"
 instance_type  = "t3.micro"
 region         = "eu-west-1"
