@@ -1,5 +1,5 @@
 region     = "us-west-2"
-key_name   = "automation"
+key_name   = "ismail"
 instance_type  = "t3.micro"
 public_key = "~/.ssh/id_rsa.pub"
 
