@@ -1,11 +1,27 @@
-resource "random_password" "password" {
-  length           = 16
-  special          = false
-  override_special = "_%@"
-}
+# resource "random_password" "password" {
+#   length           = 16
+#   special          = false
+#   override_special = "_%@"
+#   min_upper = 0
+# }
 
-resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket-${random_password.password.result}"
+# output "random" {
+# value = random_password.password.result
+# }
+
+#INSTEAD OF bucket we use bucket_prefix then terraform add some random numbers and create if for  us
+# resource "aws_s3_bucket" "bucket" {
+#   bucket = var.bucket_name
+#   acl    = "private"
+
+#   tags = {
+#     Name        = "My bucket"
+#     Environment = "Dev"
+#   }
+# }
+
+resource "aws_s3_bucket" "bucket2 {
+  bucket_prefix = "s3_class5_bucket-"
   acl    = "private"
 
   tags = {
