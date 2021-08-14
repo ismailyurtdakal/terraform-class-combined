@@ -1,3 +1,14 @@
+resource "aws_s3_bucket" "bucket2" {
+  bucket_prefix = "s3_class5_bucket-"
+  acl           = "private"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+
+
 # resource "random_password" "password" {
 #   length           = 16
 #   special          = false
@@ -20,12 +31,10 @@
 #   }
 # }
 
-resource "aws_s3_bucket" "bucket2 {
-  bucket_prefix = "s3_class5_bucket-"
-  acl    = "private"
+#Since we added bucket_prefix, we do not need this below code anymore
+# variable "bucket_name" {
+#    default     = "s3_class5_bucket"
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
+# }
+
+
