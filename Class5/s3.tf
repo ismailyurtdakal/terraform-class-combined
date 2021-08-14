@@ -2,6 +2,10 @@ resource "aws_s3_bucket" "bucket2" {
   bucket_prefix = "s3_class5_bucket-"
   acl           = "private"
 
+  versioning {
+    enabled = true
+  }
+
   tags = {
     Name        = "My bucket"
     Environment = "Dev"
